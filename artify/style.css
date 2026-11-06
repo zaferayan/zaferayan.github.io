@@ -1,0 +1,94 @@
+/* Artify pages: the app's paper and Starry Night colours */
+:root {
+  --bg: #f6f2ea;
+  --card: #fff;
+  --ink: #121a31;
+  --soft: #5a6276;
+  --accent: #2148c8;
+  --line: #e6dfd2;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0b1224;
+    --card: #141d35;
+    --ink: #f3f0e8;
+    --soft: #9aa4bb;
+    --accent: #ffc83d;
+    --line: #223053;
+  }
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font: 16px/1.6 -apple-system, system-ui, 'Segoe UI', Roboto, sans-serif;
+}
+main {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 32px 16px 64px;
+}
+a {
+  color: var(--accent);
+}
+.app {
+  margin: 0 0 4px;
+  font-weight: 600;
+}
+.app a {
+  color: var(--soft);
+  text-decoration: none;
+}
+h1 {
+  margin: 0;
+  font-size: 32px;
+  line-height: 1.2;
+}
+h1 span {
+  color: var(--soft);
+  font-weight: 400;
+}
+.meta {
+  color: var(--soft);
+  font-size: 14px;
+}
+section {
+  margin-top: 28px;
+  padding: 8px 24px 16px;
+  background: var(--card);
+  border-radius: 20px;
+  box-shadow: 0 2px 0 var(--line);
+}
+h2 {
+  font-size: 24px;
+  margin: 16px 0 4px;
+}
+h3 {
+  font-size: 19px;
+  margin: 24px 0 4px;
+}
+h4 {
+  font-size: 16px;
+  margin: 16px 0 2px;
+}
+p,
+li {
+  margin: 4px 0;
+}
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 20px;
+}
+.links a {
+  padding: 10px 18px;
+  border-radius: 14px;
+  background: var(--card);
+  box-shadow: 0 2px 0 var(--line);
+  text-decoration: none;
+  font-weight: 600;
+}
